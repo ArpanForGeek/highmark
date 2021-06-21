@@ -1,0 +1,41 @@
+schema {
+    query: Query
+}
+type Query{
+    getMembers : [Member],
+    getMemberByUmi(umi : String) : Member,
+    getMemberByFirstNameStartsWith(firstName : String) : [Member]
+}
+type Member{
+    activeCoverageInd : String,
+    addressLine1 : String,
+    addressLine2 : String,
+    addressLine3 : String,
+    addressLine4 : String,
+    addressTypeCode : String,
+    addressTypecodeDescription : String,
+    city : String,
+    countryName : String,
+    dateOfBirth : String,
+    effectiveDate : String,
+    endDate : String,
+    extension : String,
+    firstName : String,
+    groupNumber : String,
+    groupNumberIcis : String,
+    groupPhoneNumber : String,
+    lastName : String,
+    memberId : String,
+    middleName : String,
+    namePrefix : String,
+    phoneNumber : String,
+    phoneType : String,
+    sourceSystem : String,
+    state : String,
+    taxId : String,
+    zipCode : String,
+    umi : String,
+    memberRelationshipToPolicyHolder : String,
+    memberType : String,
+    planIndicator : String
+}
